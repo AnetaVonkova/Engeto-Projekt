@@ -12,6 +12,6 @@ JOIN t_Aneta_Vonkova_project_SQL_primary_final AS wage_2
 	ON wage_1.industry = wage_2.industry
 	AND wage_1.YEAR = wage_2.YEAR + 1
 GROUP BY industry,
-		 YEAR
+	YEAR
 HAVING wage_growth < 0
 ORDER BY year;
