@@ -8,7 +8,7 @@ SELECT
 FROM economies as e 
 JOIN countries as c 
 ON e.country = c.country
-HAVING `year` IN 
+WHERE `year` IN 
 	(SELECT `year` 
 	 FROM v_Aneta_Vonkova_1)  
 ;
