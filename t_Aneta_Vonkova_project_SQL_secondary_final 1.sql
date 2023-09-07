@@ -10,5 +10,5 @@ JOIN countries as c
 ON e.country = c.country
 WHERE `year` IN 
 	(SELECT `year` 
-	 FROM v_Aneta_Vonkova_1)  
+	 FROM t_Aneta_Vonkova_project_SQL_primary_final)  
 ;
